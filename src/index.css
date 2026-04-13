@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #1E40AF;
+  --secondary-color: #10B981;
+  --accent-color: #F59E0B;
+  --background-color: #F3F4F6;
+  --text-color: #1F2937;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors;
+}
+
+.btn-accent {
+  @apply bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors;
+}
